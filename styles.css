@@ -1,0 +1,318 @@
+/* @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap'); */
+
+@charset "UTF-8";
+
+@font-face {
+  font-family: "et-book";
+  src: url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot");
+  src: url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot?#iefix")
+      format("embedded-opentype"),
+    url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff")
+      format("woff"),
+    url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.ttf")
+      format("truetype"),
+    url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.svg#etbookromanosf")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "et-book";
+  src: url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot");
+  src: url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot?#iefix")
+      format("embedded-opentype"),
+    url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff")
+      format("woff"),
+    url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.ttf")
+      format("truetype"),
+    url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.svg#etbookromanosf")
+      format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "et-book";
+  src: url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot");
+  src: url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot?#iefix")
+      format("embedded-opentype"),
+    url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff")
+      format("woff"),
+    url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.ttf")
+      format("truetype"),
+    url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.svg#etbookromanosf")
+      format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  background-color: black;
+  line-height: 1.75;
+  font-family: "et-book", Georgia, serif;
+}
+
+header {
+  display: block;
+  padding: 1em;
+  background-color: rgba(95, 121, 149, 1);
+  background-size: cover;
+  box-sizing: border-box;
+  color: white;
+  font-family: "et-book", Georgia, serif;
+  font-size: 2em;
+  width: 100%;
+}
+
+h1 {
+  font-size: 5.625em;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+}
+
+h3 {
+  font-family: "et-book", Georgia, serif;
+  text-align: center;
+  margin-top: 100px;
+}
+
+/* sección indice -nav Tag */
+
+nav {
+  display: block;
+}
+
+nav li cite {
+  display: block;
+  display: flex;
+  max-width: 28em;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 1em;
+}
+
+nav li:hover {
+  background-color: rgb(29, 28, 28);
+}
+
+nav a {
+  color: white;
+  font-size: 2.5em;
+  font-family: "et-book", Georgia, serif;
+}
+
+/* sección agradecimientos */
+
+#agradecimientos {
+  margin-top: 200px;
+}
+
+#agradecimientos h2 {
+  text-align: center;
+  text-justify: auto;
+  font-size: 80px;
+  font-family: "et-book", Georgia, serif;
+  line-height: 1.75;
+}
+
+#agradecimientos p {
+  color: white;
+  font-family: "et-book", Georgia, serif;
+  font-size: 2em;
+  text-align: center;
+  font-family: "et-book", Georgia, serif;
+}
+
+/* Sección footer */
+footer {
+  color: white;
+  font-family: "et-book", Georgia, serif;
+  font-size: 2em;
+  text-align: center;
+  font-family: "et-book", Georgia, serif;
+}
+
+footer p {
+  max-width: 28em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+}
+
+/* estilos de página introducción */
+
+.header-page a {
+  text-decoration: none;
+}
+
+article {
+  color: white;
+  font-family: "et-book", Georgia, serif;
+  font-size: 3em;
+  text-align: center;
+}
+
+article p {
+  margin: 10%;
+  text-align: justify;
+}
+
+#page-title p {
+  letter-spacing: 0.025em;
+  font-size: 1.625em;
+  text-align: center;
+  font-weight: normal;
+  line-height: 1;
+  margin-top: 60px;
+  text-align: center;
+}
+
+#page-title:after {
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 0 auto; /* This will center the border. */
+  width: 45%; /* Change this to whatever width you want. */
+  padding-top: 150px; /* This creates some space between the element and the border. */
+  border-bottom: 0.35em solid rgba(95, 121, 149, 0.5); /* This creates the border */
+}
+
+#mve {
+  width: 800px;
+  margin: auto;
+  display: block;
+  margin-top: 200px;
+}
+
+figure img {
+  margin: auto;
+  display: block;
+  width: 400px;
+}
+
+figcaption {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  font-family: inherit;
+  color: white;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+#references {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  font-family: inherit;
+  color: white;
+  margin-top: 40px;
+  margin: 10%;
+}
+
+#references p {
+  display: block;
+  margin: 0px;
+  padding: 50px;
+  margin-top: 40px;
+  color: white;
+  font-family: "et-book", Georgia, serif;
+  font-size: 35px;
+  text-align: center;
+}
+
+/* PRIMER APARTADO */
+
+.img-fragments {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin: 5px;
+}
+
+.img-fragments img {
+  width: 200px;
+  height: auto;
+  padding: 5px;
+}
+
+#manet {
+  width: 800px;
+}
+
+.cite {
+  font-style: italic;
+  margin: 0px 300px 0px 300px;
+  text-align: justify;
+}
+
+.epigraph {
+font-size: 50px;
+ text-align: end;
+ font-style: italic;
+ margin: 100px 70px 100px 500px;
+ font-family: "et-book", Georgia, serif;
+}
+
+/* imágenes responsivas */
+
+@media only screen and (max-width: 800px) {
+  .img-fragments {
+    /*  Nowrap no se necesita, pero por algo sí, pero no. pero no sé muy bien, déjalo así mira ya, como sea, */
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  #mve {
+    width: 400px;
+    margin: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  figure img {
+    width: 300px;
+  }
+
+  figure #croizat-img {
+    width: 400px;
+  }
+  #manet {
+    width: 400px;
+  }
+  figure #castiglione-drawing {
+    width: 300px;
+  }
+
+  figure #castigliones-back {
+    width: 400px;
+  }
+
+}
+
+#croizat-img {
+  width: 600px;
+}
+
+
+#castiglione-drawing {
+  width: 500px;
+}
+#castigliones-back {
+  width: 700px;
+}
+
