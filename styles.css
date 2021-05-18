@@ -118,11 +118,11 @@ nav a {
 
 /* sección agradecimientos */
 
-#agradecimientos {
+.agradecimientos {
   margin-top: 200px;
 }
 
-#agradecimientos h2 {
+.agradecimientos h2 {
   text-align: center;
   text-justify: auto;
   font-size: 80px;
@@ -130,12 +130,11 @@ nav a {
   line-height: 1.75;
 }
 
-#agradecimientos p {
+.agradecimientos p {
   color: white;
   font-family: "et-book", Georgia, serif;
   font-size: 2em;
   text-align: center;
-  font-family: "et-book", Georgia, serif;
 }
 
 /* Sección footer */
@@ -174,7 +173,7 @@ article p {
 
 #page-title p {
   letter-spacing: 0.025em;
-  font-size: 1.625em;
+  font-size: 15vw;
   text-align: center;
   font-weight: normal;
   line-height: 1;
@@ -261,11 +260,11 @@ figcaption {
 }
 
 .epigraph {
-font-size: 50px;
- text-align: end;
- font-style: italic;
- margin: 100px 70px 100px 500px;
- font-family: "et-book", Georgia, serif;
+  font-size: 50px;
+  text-align: end;
+  font-style: italic;
+  margin: 100px 70px 100px 500px;
+  font-family: "et-book", Georgia, serif;
 }
 
 /* imágenes responsivas */
@@ -301,13 +300,11 @@ font-size: 50px;
   figure #castigliones-back {
     width: 400px;
   }
-
 }
 
 #croizat-img {
   width: 600px;
 }
-
 
 #castiglione-drawing {
   width: 500px;
@@ -316,3 +313,99 @@ font-size: 50px;
   width: 700px;
 }
 
+/* mobile first */
+
+@media (max-width: 400px) {
+  header h1 {
+    font-size: 75px;
+  }
+
+  header h2 {
+    font-size: 30px;
+  }
+
+  nav a cite {
+    font-size: 20px;
+  }
+
+  #creditos {
+    margin: 50px 20px 20px 20px;
+  }
+
+  #creditos h2 {
+    font-size: 35px;
+  }
+
+  #creditos p {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  footer {
+    margin: 20px;
+  }
+
+  footer p {
+    font-size: 20px;
+  }
+
+  #page-title::after {
+    padding-top: 60px;
+    border-bottom: 0.2em solid rgba(95, 121, 149, 0.5);
+    padding-top: 20px;
+  }
+
+  #mve {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding-top: 50px;
+  }
+  figure figcaption {
+    margin: 5% 10% 10% 10%;
+    font-size: 12px;
+  }
+
+  article {
+    font-size: calc(1em * 1.2);
+    margin: 40px 1px 20px 1px;
+  }
+
+  article p {
+    text-align: left;
+    margin: 3%;
+    line-height: 1.5;
+  }
+
+  #references {
+    margin: 15% 5%;
+  }
+
+  #references p {
+    font-size: calc(1em * .6);
+    padding: 0px;
+    line-height: 1.5;
+  }
+
+  .epigraph {
+    margin: 70px 15px 5px 30px;
+    font-size: 1.5em;
+  }
+
+  h3 {
+    margin: 30px;
+  }
+
+  #figcaption-apt1 {
+    margin: 5% 10% 10% 10%;
+    font-size: 12px;
+  }
+  
+  figure #croizat-img {
+    width: 80%;
+  }
+
+  figure {
+    margin-top: 40px ;
+  }
+}
