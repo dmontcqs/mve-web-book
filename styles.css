@@ -52,12 +52,12 @@
   padding: 0;
   box-sizing: border-box;
   color: white;
+  font-family: "et-book", Georgia, serif;
 }
 
 body {
   background-color: black;
   line-height: 1.75;
-  font-family: "et-book", Georgia, serif;
 }
 
 header {
@@ -67,7 +67,6 @@ header {
   background-size: cover;
   box-sizing: border-box;
   color: white;
-  font-family: "et-book", Georgia, serif;
   font-size: 2em;
   width: 100%;
 }
@@ -84,7 +83,6 @@ h2 {
 }
 
 h3 {
-  font-family: "et-book", Georgia, serif;
   text-align: center;
   margin-top: 100px;
 }
@@ -111,9 +109,7 @@ nav li:hover {
 }
 
 nav a {
-  color: white;
   font-size: 2.5em;
-  font-family: "et-book", Georgia, serif;
 }
 
 /* sección agradecimientos */
@@ -126,24 +122,18 @@ nav a {
   text-align: center;
   text-justify: auto;
   font-size: 80px;
-  font-family: "et-book", Georgia, serif;
   line-height: 1.75;
 }
 
 .agradecimientos p {
-  color: white;
-  font-family: "et-book", Georgia, serif;
   font-size: 2em;
   text-align: center;
 }
 
 /* Sección footer */
 footer {
-  color: white;
-  font-family: "et-book", Georgia, serif;
   font-size: 2em;
   text-align: center;
-  font-family: "et-book", Georgia, serif;
 }
 
 footer p {
@@ -160,8 +150,6 @@ footer p {
 }
 
 article {
-  color: white;
-  font-family: "et-book", Georgia, serif;
   font-size: 3em;
   text-align: center;
 }
@@ -207,8 +195,6 @@ figcaption {
   display: block;
   text-align: center;
   font-size: 30px;
-  font-family: inherit;
-  color: white;
   margin-top: 2%;
   margin-bottom: 5%;
 }
@@ -217,8 +203,6 @@ figcaption {
   display: block;
   text-align: center;
   font-size: 30px;
-  font-family: inherit;
-  color: white;
   margin-top: 40px;
   margin: 10%;
 }
@@ -228,8 +212,6 @@ figcaption {
   margin: 0px;
   padding: 50px;
   margin-top: 40px;
-  color: white;
-  font-family: "et-book", Georgia, serif;
   font-size: 35px;
   text-align: center;
 }
@@ -264,7 +246,6 @@ figcaption {
   text-align: end;
   font-style: italic;
   margin: 100px 70px 100px 500px;
-  font-family: "et-book", Georgia, serif;
 }
 
 /* imágenes responsivas */
@@ -313,19 +294,26 @@ figcaption {
   width: 700px;
 }
 
-/* mobile first */
-
-@media (max-width: 400px) {
+/* ipad second */
+@media (max-width: 768px) {
   header h1 {
-    font-size: 75px;
+    font-size: 20vw;
   }
 
   header h2 {
-    font-size: 30px;
+    font-size: 12vw;
+  }
+  header h3 {
+    font-size: 10vw;
+    margin: 0;
+  }
+
+  #page-title p {
+    font-size: 10vw;
   }
 
   nav a cite {
-    font-size: 20px;
+    font-size: 40px;
   }
 
   #creditos {
@@ -333,11 +321,11 @@ figcaption {
   }
 
   #creditos h2 {
-    font-size: 35px;
+    font-size: 60px;
   }
 
   #creditos p {
-    font-size: 20px;
+    font-size: 35px;
     padding: 10px;
   }
 
@@ -367,7 +355,7 @@ figcaption {
   }
 
   article {
-    font-size: calc(1em * 1.2);
+    font-size: calc(1em * 1.7);
     margin: 40px 1px 20px 1px;
   }
 
@@ -382,13 +370,13 @@ figcaption {
   }
 
   #references p {
-    font-size: calc(1em * .6);
+    font-size: calc(1em * 0.8);
     padding: 0px;
     line-height: 1.5;
   }
 
   .epigraph {
-    margin: 70px 15px 5px 30px;
+    margin: 70px 15px 30px 30px;
     font-size: 1.5em;
   }
 
@@ -400,12 +388,58 @@ figcaption {
     margin: 5% 10% 10% 10%;
     font-size: 12px;
   }
-  
+
   figure #croizat-img {
     width: 80%;
   }
 
   figure {
-    margin-top: 40px ;
+    margin-top: 40px;
+  }
+  .cite {
+    margin: 70px 15px 5px 30px;
+    font-size: 1.5em;
+  }
+  #manet {
+    width: 80%;
+  }
+  figure #castigliones-back {
+    width: 80%;
+  }
+}
+
+/* mobile first */
+@media (max-width: 600px) {
+  nav a cite {
+    font-size: 20px;
+  }
+
+  #creditos {
+    margin: 50px 20px 20px 20px;
+  }
+
+  #creditos h2 {
+    font-size: 35px;
+  }
+
+  #creditos p {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  article {
+    font-size: calc(1em * 1.2);
+    margin: 40px 1px 20px 1px;
+  }
+
+  #references p {
+    font-size: calc(1em * 0.6);
+    padding: 0px;
+    line-height: 1.5;
+  }
+
+  .epigraph {
+    margin: 70px 15px 30px 30px;
+    font-size: 1.5em;
   }
 }
