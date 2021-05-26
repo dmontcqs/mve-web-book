@@ -456,3 +456,9 @@ figcaption {
     font-size: 1.5em;
   }
 }
+
+
+#link-inicio {
+  font-size: larger;
+  margin-top: 100px;
+}
